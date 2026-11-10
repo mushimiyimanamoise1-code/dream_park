@@ -11,7 +11,7 @@ Aucune fonctionnalité n'est implémentée : les méthodes lèvent `NotImplement
 | Nom | Rôle |
 |---|---|
 | MUSHIMIYIMANA MOISE | Chargé de l'implementation et realisation du code |
-| [NOM Prénom du binôme] | Chargé de la documentation et des tests |
+| EL ALAOUI ES SOUSY ANAS | Chargé de la documentation et des tests |
 
 **Dépôt git :** https://github.com/mushimiyimanamoise1-code/dream_park
 
