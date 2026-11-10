@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module dreampark.placement</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title"><a href="dreampark.html" class="white">dreampark</a>.placement</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:///c:/users/moise.mushimiyimana/desktop/dreampark_partie0/dreampark/dreampark/placement.py">c:\users\moise.mushimiyimana\desktop\dreampark_partie0\dreampark\dreampark\placement.py</a></td></tr></table>
+    <p><span class="code">La&nbsp;classe&nbsp;<a href="#Placement">Placement</a><br>
+&nbsp;<br>
+@author:&nbsp;MUSHIMIYIMANA&nbsp;MOISE</span></p>
+<p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="dreampark.placement.html#Placement">Placement</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Placement">class <strong>Placement</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#Placement">Placement</a>(voiture:&nbsp;'Voiture',&nbsp;place:&nbsp;'Place',&nbsp;date_debut:&nbsp;Optional[date]&nbsp;=&nbsp;None)<br>
+&nbsp;<br>
+Occupation&nbsp;d'une&nbsp;place&nbsp;par&nbsp;une&nbsp;voiture&nbsp;sur&nbsp;une&nbsp;période.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="Placement-__init__"><strong>__init__</strong></a>(
+    self,
+    voiture: 'Voiture',
+    place: 'Place',
+    date_debut: Optional[date] = None
+)</dt><dd><span class="code">Crée&nbsp;un&nbsp;placement&nbsp;en&nbsp;cours&nbsp;(date_fin&nbsp;=&nbsp;None).<br>
+&nbsp;<br>
+:param&nbsp;voiture:&nbsp;la&nbsp;voiture&nbsp;garée<br>
+:param&nbsp;place:&nbsp;la&nbsp;place&nbsp;occupée<br>
+:param&nbsp;date_debut:&nbsp;début&nbsp;du&nbsp;placement&nbsp;(aujourd'hui&nbsp;en&nbsp;France&nbsp;par&nbsp;défaut)<br>
+:raises&nbsp;ValueError:&nbsp;si&nbsp;voiture&nbsp;ou&nbsp;place&nbsp;est&nbsp;None.</span></dd></dl>
+
+<dl><dt><a name="Placement-partir_place"><strong>partir_place</strong></a>(self) -&gt; None</dt><dd><span class="code">Clôture&nbsp;le&nbsp;placement&nbsp;(date_fin&nbsp;=&nbsp;aujourd'hui)&nbsp;et&nbsp;libère&nbsp;la&nbsp;place.<br>
+&nbsp;<br>
+:raises&nbsp;RuntimeError:&nbsp;si&nbsp;le&nbsp;placement&nbsp;est&nbsp;déjà&nbsp;terminé.</span></dd></dl>
+
+<hr>
+Readonly properties defined here:<br>
+<dl><dt><strong>est_en_cours</strong></dt>
+<dd><span class="code">Vrai&nbsp;tant&nbsp;que&nbsp;date_fin&nbsp;n'est&nbsp;pas&nbsp;renseignée.</span></dd>
+</dl>
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor data-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td></tr>
+    
+<tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><strong>Optional</strong> = typing.Optional<br>
+<strong>TYPE_CHECKING</strong> = False</td></tr></table>
+</body></html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module dreampark.contrat</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title"><a href="dreampark.html" class="white">dreampark</a>.contrat</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:///c:/users/moise.mushimiyimana/desktop/dreampark_partie0/dreampark/dreampark/contrat.py">c:\users\moise.mushimiyimana\desktop\dreampark_partie0\dreampark\dreampark\contrat.py</a></td></tr></table>
+    <p><span class="code">La&nbsp;classe&nbsp;<a href="#Contrat">Contrat</a><br>
+&nbsp;<br>
+@author:&nbsp;MUSHIMIYIMANA&nbsp;MOISE</span></p>
+<p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="dreampark.contrat.html#Contrat">Contrat</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Contrat">class <strong>Contrat</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#Contrat">Contrat</a>(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;dateDebut:&nbsp;Optional[datetime]&nbsp;=&nbsp;None,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;dateFin:&nbsp;Optional[datetime]&nbsp;=&nbsp;None<br>
+)<br>
+&nbsp;<br>
+Lien&nbsp;entre&nbsp;un&nbsp;client&nbsp;et&nbsp;un&nbsp;abonnement&nbsp;sur&nbsp;une&nbsp;période&nbsp;donnée.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="Contrat-__init__"><strong>__init__</strong></a>(
+    self,
+    dateDebut: Optional[datetime] = None,
+    dateFin: Optional[datetime] = None
+)</dt><dd><span class="code">Crée&nbsp;un&nbsp;contrat.<br>
+&nbsp;<br>
+:param&nbsp;date_debut:&nbsp;début&nbsp;du&nbsp;contrat&nbsp;(aujourd'hui&nbsp;par&nbsp;défaut)<br>
+:param&nbsp;date_fin:&nbsp;fin&nbsp;du&nbsp;contrat&nbsp;(None&nbsp;=&nbsp;durée&nbsp;illimitée)<br>
+&nbsp;<br>
+erreur<br>
+:raises&nbsp;ValueError:&nbsp;si&nbsp;date_fin&nbsp;&lt;&nbsp;date_debut.</span></dd></dl>
+
+<dl><dt><a name="Contrat-rompre_contrat"><strong>rompre_contrat</strong></a>(self) -&gt; None</dt><dd><span class="code">Met&nbsp;date_fin&nbsp;à&nbsp;aujourd'hui.<br>
+&nbsp;<br>
+:raises&nbsp;RuntimeError:&nbsp;si&nbsp;le&nbsp;contrat&nbsp;n'est&nbsp;pas&nbsp;en&nbsp;cours.</span></dd></dl>
+
+<hr>
+Readonly properties defined here:<br>
+<dl><dt><strong>estEnCours</strong></dt>
+<dd><span class="code">Vrai&nbsp;si&nbsp;aujourd'hui&nbsp;est&nbsp;dans&nbsp;[date_debut,&nbsp;date_fin]&nbsp;(date_fin&nbsp;None&nbsp;=&nbsp;illimité).</span></dd>
+</dl>
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor data-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td></tr>
+    
+<tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><strong>Optional</strong> = typing.Optional<br>
+<strong>TYPE_CHECKING</strong> = False</td></tr></table>
+</body></html>

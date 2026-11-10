@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module dreampark.equipements</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title"><a href="dreampark.html" class="white">dreampark</a>.equipements</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:///c:/users/moise.mushimiyimana/desktop/dreampark_partie0/dreampark/dreampark/equipements.py">c:\users\moise.mushimiyimana\desktop\dreampark_partie0\dreampark\dreampark\equipements.py</a></td></tr></table>
+    <p><span class="code">Équipements&nbsp;des&nbsp;accès&nbsp;:&nbsp;caméra,&nbsp;téléporteur,&nbsp;borne,&nbsp;panneau.<br>
+&nbsp;<br>
+@author:&nbsp;MUSHIMIYIMANA&nbsp;MOISE</span></p>
+<p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="dreampark.equipements.html#BorneTicket">BorneTicket</a>
+</dt><dt class="heading-text"><a href="dreampark.equipements.html#Camera">Camera</a>
+</dt><dt class="heading-text"><a href="dreampark.equipements.html#PanneauAffichage">PanneauAffichage</a>
+</dt><dt class="heading-text"><a href="dreampark.equipements.html#Teleporteur">Teleporteur</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="BorneTicket">class <strong>BorneTicket</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Borne&nbsp;de&nbsp;ticket&nbsp;et&nbsp;de&nbsp;paiement.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="BorneTicket-delivrer_ticket"><strong>delivrer_ticket</strong></a>(self, c: 'Client') -&gt; str</dt><dd><span class="code">Retourne&nbsp;le&nbsp;ticket&nbsp;(identifiant&nbsp;unique)&nbsp;pour&nbsp;le&nbsp;client&nbsp;c.</span></dd></dl>
+
+<dl><dt><a name="BorneTicket-proposer_abonnements"><strong>proposer_abonnements</strong></a>(self, c: 'Client', p: 'Parking') -&gt; str</dt><dd><span class="code">Liste&nbsp;des&nbsp;abonnements&nbsp;de&nbsp;p&nbsp;proposés&nbsp;à&nbsp;un&nbsp;client&nbsp;non&nbsp;abonné.</span></dd></dl>
+
+<dl><dt><a name="BorneTicket-proposer_services"><strong>proposer_services</strong></a>(self) -&gt; str</dt><dd><span class="code">Liste&nbsp;des&nbsp;services&nbsp;proposés&nbsp;aux&nbsp;abonnés.</span></dd></dl>
+
+<dl><dt><a name="BorneTicket-proposer_type_paiement"><strong>proposer_type_paiement</strong></a>(self) -&gt; str</dt><dd><span class="code">Retourne&nbsp;'CB'&nbsp;ou&nbsp;'ESPECES'&nbsp;selon&nbsp;le&nbsp;choix&nbsp;du&nbsp;client.</span></dd></dl>
+
+<dl><dt><a name="BorneTicket-recuperer_infos_carte"><strong>recuperer_infos_carte</strong></a>(self, c: 'Client') -&gt; str</dt><dd><span class="code">Lit&nbsp;la&nbsp;carte&nbsp;d'abonnement&nbsp;de&nbsp;c&nbsp;;&nbsp;retourne&nbsp;son&nbsp;statut.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Camera">class <strong>Camera</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Caméra&nbsp;d'un&nbsp;accès&nbsp;:&nbsp;capture&nbsp;les&nbsp;caractéristiques&nbsp;d'une&nbsp;voiture.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="Camera-capturer_hauteur"><strong>capturer_hauteur</strong></a>(self, v: 'Voiture') -&gt; float</dt><dd><span class="code">Retourne&nbsp;la&nbsp;hauteur&nbsp;de&nbsp;v&nbsp;(m).</span></dd></dl>
+
+<dl><dt><a name="Camera-capturer_immatriculation"><strong>capturer_immatriculation</strong></a>(self, v: 'Voiture') -&gt; str</dt><dd><span class="code">Retourne&nbsp;l'immatriculation&nbsp;de&nbsp;v.</span></dd></dl>
+
+<dl><dt><a name="Camera-capturer_longueur"><strong>capturer_longueur</strong></a>(self, v: 'Voiture') -&gt; float</dt><dd><span class="code">Retourne&nbsp;la&nbsp;longueur&nbsp;de&nbsp;v&nbsp;(m).</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="PanneauAffichage">class <strong>PanneauAffichage</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Panneau&nbsp;extérieur&nbsp;indiquant&nbsp;les&nbsp;places&nbsp;disponibles.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="PanneauAffichage-afficher_nb_places_disponibles"><strong>afficher_nb_places_disponibles</strong></a>(self, p: 'Parking') -&gt; str</dt><dd><span class="code">Retourne&nbsp;le&nbsp;texte&nbsp;affiché&nbsp;(ex.&nbsp;'12&nbsp;places&nbsp;disponibles',&nbsp;'COMPLET'&nbsp;si&nbsp;0).</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Teleporteur">class <strong>Teleporteur</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Téléporte&nbsp;une&nbsp;voiture&nbsp;entre&nbsp;l'accès&nbsp;et&nbsp;sa&nbsp;place.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="Teleporteur-teleporter_voiture"><strong>teleporter_voiture</strong></a>(self, v: 'Voiture', p: 'Place') -&gt; 'Placement'</dt><dd><span class="code">Téléporte&nbsp;v&nbsp;sur&nbsp;p,&nbsp;crée&nbsp;et&nbsp;retourne&nbsp;le&nbsp;Placement.<br>
+&nbsp;<br>
+:raises&nbsp;ValueError:&nbsp;si&nbsp;p&nbsp;n'est&nbsp;pas&nbsp;libre&nbsp;ou&nbsp;ne&nbsp;convient&nbsp;pas&nbsp;à&nbsp;v.</span></dd></dl>
+
+<dl><dt><a name="Teleporteur-teleporter_voiture_super_abonne"><strong>teleporter_voiture_super_abonne</strong></a>(self, v: 'Voiture') -&gt; str</dt><dd><span class="code">Téléporte&nbsp;v&nbsp;d'un&nbsp;super-abonné&nbsp;(place&nbsp;garantie,&nbsp;éventuellement&nbsp;autre&nbsp;parking).<br>
+&nbsp;<br>
+:return:&nbsp;message&nbsp;de&nbsp;résultat.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor data-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td></tr>
+    
+<tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><strong>TYPE_CHECKING</strong> = False</td></tr></table>
+</body></html>

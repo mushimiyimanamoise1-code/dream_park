@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module dreampark.parking</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title"><a href="dreampark.html" class="white">dreampark</a>.parking</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:///c:/users/moise.mushimiyimana/desktop/dreampark_partie0/dreampark/dreampark/parking.py">c:\users\moise.mushimiyimana\desktop\dreampark_partie0\dreampark\dreampark\parking.py</a></td></tr></table>
+    <p><span class="code">La&nbsp;classe&nbsp;<a href="#Parking">Parking</a>&nbsp;(singleton)&nbsp;:&nbsp;unique&nbsp;dans&nbsp;l'application<br>
+&nbsp;<br>
+@author:&nbsp;MUSHIMIYIMANA&nbsp;MOISE</span></p>
+<p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="dreampark.parking.html#Parking">Parking</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Parking">class <strong>Parking</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#Parking">Parking</a>(nbNiveaux:&nbsp;int,&nbsp;nbPlacesParNiveau:&nbsp;int,&nbsp;prix:&nbsp;int&nbsp;=&nbsp;0)<br>
+&nbsp;<br>
+Une&nbsp;seule&nbsp;instance&nbsp;dans&nbsp;l'application&nbsp;;&nbsp;contient&nbsp;les&nbsp;places&nbsp;et&nbsp;les&nbsp;abonnements.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="Parking-__init__"><strong>__init__</strong></a>(self, nbNiveaux: int, nbPlacesParNiveau: int, prix: int = 0)</dt><dd><span class="code">Initialise&nbsp;le&nbsp;parking&nbsp;et&nbsp;l'enregistre&nbsp;comme&nbsp;instance&nbsp;unique.<br>
+&nbsp;<br>
+:param&nbsp;nbNiveaux:&nbsp;nombre&nbsp;de&nbsp;niveaux&nbsp;(&gt;=&nbsp;1)<br>
+:param&nbsp;nbplacesParNiveau:&nbsp;nombre&nbsp;de&nbsp;places&nbsp;par&nbsp;niveau&nbsp;(&gt;=&nbsp;1)<br>
+:param&nbsp;prix:&nbsp;tarif&nbsp;du&nbsp;parking&nbsp;(&gt;=&nbsp;0)<br>
+&nbsp;<br>
+les&nbsp;Erreurs<br>
+:raises&nbsp;RuntimeError:&nbsp;si&nbsp;une&nbsp;instance&nbsp;existe&nbsp;déjà&nbsp;(singleton).<br>
+:raises&nbsp;ValueError:&nbsp;si&nbsp;nb_niveaux&nbsp;&lt;&nbsp;1,&nbsp;nb_places_par_niveau&nbsp;&lt;&nbsp;1&nbsp;ou&nbsp;prix&nbsp;&lt;&nbsp;0.</span></dd></dl>
+
+<dl><dt><a name="Parking-ajouter_abonnement"><strong>ajouter_abonnement</strong></a>(self, ab: 'Abonnement') -&gt; None</dt><dd><span class="code">Ajoute&nbsp;une&nbsp;formule&nbsp;d'abonnement&nbsp;au&nbsp;catalogue.</span></dd></dl>
+
+<dl><dt><a name="Parking-nb_places_libres_par_niveau"><strong>nb_places_libres_par_niveau</strong></a>(self, niveau: str) -&gt; int</dt><dd><span class="code">Nombre&nbsp;de&nbsp;places&nbsp;libres&nbsp;du&nbsp;niveau.<br>
+&nbsp;<br>
+:raises&nbsp;ValueError:&nbsp;si&nbsp;le&nbsp;niveau&nbsp;n'existe&nbsp;pas.</span></dd></dl>
+
+<dl><dt><a name="Parking-rechercher_place"><strong>rechercher_place</strong></a>(self, v: 'Voiture') -&gt; Optional['Place']</dt><dd><span class="code">Retourne&nbsp;une&nbsp;place&nbsp;libre&nbsp;compatible&nbsp;avec&nbsp;v,&nbsp;ou&nbsp;None&nbsp;si&nbsp;aucune.</span></dd></dl>
+
+<hr>
+Class methods defined here:<br>
+<dl><dt><a name="Parking-obtenir_instance"><strong>obtenir_instance</strong></a>(nbNiveaux: int = 1, nbPlacesParNiveau: int = 1, prix: int = 0) -&gt; 'Parking'</dt><dd><span class="code">Retourne&nbsp;l'unique&nbsp;instance&nbsp;(créée&nbsp;au&nbsp;premier&nbsp;appel).<br>
+&nbsp;<br>
+Si&nbsp;l'instance&nbsp;existe&nbsp;déjà,&nbsp;elle&nbsp;est&nbsp;retournée&nbsp;et&nbsp;les&nbsp;arguments&nbsp;sont&nbsp;ignorés.<br>
+&nbsp;<br>
+:raises&nbsp;ValueError:&nbsp;si&nbsp;nb_niveaux&nbsp;ou&nbsp;nb_places_par_niveau&nbsp;&lt;&nbsp;1,&nbsp;ou&nbsp;prix&nbsp;&lt;&nbsp;0,&nbsp;à&nbsp;la&nbsp;création.</span></dd></dl>
+
+<dl><dt><a name="Parking-reinitialiser"><strong>reinitialiser</strong></a>() -&gt; None</dt><dd><span class="code">Détruit&nbsp;l'instance&nbsp;et&nbsp;réinitialise&nbsp;ses&nbsp;valeurs&nbsp;comme&nbsp;à&nbsp;l'initiale.</span></dd></dl>
+
+<hr>
+Readonly properties defined here:<br>
+<dl><dt><strong>nb_places_libres</strong></dt>
+<dd><span class="code">Nombre&nbsp;total&nbsp;de&nbsp;places&nbsp;libres&nbsp;(attribut&nbsp;dérivé).</span></dd>
+</dl>
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__annotations__</strong> = {'_instance': "Optional['Parking']"}</dl>
+
+</td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor data-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td></tr>
+    
+<tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><strong>Optional</strong> = typing.Optional<br>
+<strong>TYPE_CHECKING</strong> = False</td></tr></table>
+</body></html>

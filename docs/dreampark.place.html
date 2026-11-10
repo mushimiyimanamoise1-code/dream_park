@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module dreampark.place</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title"><a href="dreampark.html" class="white">dreampark</a>.place</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:///c:/users/moise.mushimiyimana/desktop/dreampark_partie0/dreampark/dreampark/place.py">c:\users\moise.mushimiyimana\desktop\dreampark_partie0\dreampark\dreampark\place.py</a></td></tr></table>
+    <p><span class="code">La&nbsp;classe&nbsp;<a href="#Place">Place</a>.<br>
+&nbsp;<br>
+@author:&nbsp;MUSHIMIYIMANA&nbsp;MOISE</span></p>
+<p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="dreampark.place.html#Place">Place</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Place">class <strong>Place</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#Place">Place</a>(numero:&nbsp;int,&nbsp;niveau:&nbsp;str,&nbsp;longueur:&nbsp;float,&nbsp;hauteur:&nbsp;float)<br>
+&nbsp;<br>
+Emplacement&nbsp;du&nbsp;parking,&nbsp;identifié&nbsp;par&nbsp;un&nbsp;numéro&nbsp;et&nbsp;un&nbsp;niveau.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="Place-__init__"><strong>__init__</strong></a>(self, numero: int, niveau: str, longueur: float, hauteur: float)</dt><dd><span class="code">Crée&nbsp;une&nbsp;place&nbsp;libre.<br>
+&nbsp;<br>
+:param&nbsp;numero:&nbsp;numéro&nbsp;(&gt;=&nbsp;1)<br>
+:param&nbsp;niveau:&nbsp;lettre&nbsp;majuscule&nbsp;du&nbsp;niveau&nbsp;(ex.&nbsp;'A')<br>
+:param&nbsp;longueur:&nbsp;longueur&nbsp;de&nbsp;la&nbsp;place&nbsp;(LONGUEUR_MIN&nbsp;&lt;=&nbsp;l&nbsp;&lt;=&nbsp;LONGUEUR_MAX)<br>
+:param&nbsp;hauteur:&nbsp;hauteur&nbsp;de&nbsp;la&nbsp;place&nbsp;(HAUTEUR_MIN&nbsp;&lt;=&nbsp;h&nbsp;&lt;=&nbsp;HAUTEUR_MAX)<br>
+:raises&nbsp;ValueError:&nbsp;si&nbsp;une&nbsp;valeur&nbsp;est&nbsp;invalide.</span></dd></dl>
+
+<dl><dt><a name="Place-ajouter_placement"><strong>ajouter_placement</strong></a>(self, p: 'Placement') -&gt; None</dt><dd><span class="code">Enregistre&nbsp;un&nbsp;placement&nbsp;sur&nbsp;cette&nbsp;place&nbsp;et&nbsp;la&nbsp;marque&nbsp;occupée.</span></dd></dl>
+
+<dl><dt><a name="Place-convient_a"><strong>convient_a</strong></a>(self, voiture: 'Voiture') -&gt; bool</dt><dd><span class="code">Vrai&nbsp;si&nbsp;la&nbsp;place&nbsp;est&nbsp;libre&nbsp;et&nbsp;si&nbsp;longueur/hauteur&nbsp;de&nbsp;la&nbsp;voiture&nbsp;&lt;=&nbsp;celles&nbsp;de&nbsp;la&nbsp;place.</span></dd></dl>
+
+<dl><dt><a name="Place-liberer"><strong>liberer</strong></a>(self) -&gt; None</dt><dd><span class="code">Marque&nbsp;la&nbsp;place&nbsp;libre&nbsp;(appelée&nbsp;par&nbsp;le&nbsp;téléporteur&nbsp;à&nbsp;la&nbsp;sortie).</span></dd></dl>
+
+<hr>
+Readonly properties defined here:<br>
+<dl><dt><strong>id_place</strong></dt>
+<dd><span class="code">Identifiant&nbsp;unique&nbsp;=&nbsp;niveau&nbsp;+&nbsp;numéro&nbsp;(ex.&nbsp;'A1',&nbsp;'C15').</span></dd>
+</dl>
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>HAUTEUR_MAX</strong> = 4.0</dl>
+
+<dl><dt><strong>HAUTEUR_MIN</strong> = 2.0</dl>
+
+<dl><dt><strong>LONGUEUR_MAX</strong> = 6.0</dl>
+
+<dl><dt><strong>LONGUEUR_MIN</strong> = 4.0</dl>
+
+</td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor data-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td></tr>
+    
+<tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><strong>TYPE_CHECKING</strong> = False</td></tr></table>
+</body></html>
