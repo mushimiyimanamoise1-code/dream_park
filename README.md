@@ -33,8 +33,8 @@ NB : l'execution du fichier generer_docs.py, permet de generer tous les pydoc en
 ## Répartition du travail (à compléter)
 | Classes / use cases | Spécification | Tests |
 |---|---|---|
-| [ex. Parking, Place, Placement] | [Prénom 1] | [Prénom 1] |
-| [ex. Client, Abonnement, Contrat] | [Prénom 2] | [Prénom 2] |
+| Parking, Place, Placement | MOISE | - |
+| Client, Abonnement, Contrat| MOISE | - |
 
 ## Modifications apportées au diagramme de classes (à justifier)
 | # | Modification | Justification |
